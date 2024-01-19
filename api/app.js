@@ -32,7 +32,7 @@ const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '/client/dist'))); //dist vite oda server
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/dist/index.html')); //index.html root file
+  res.sendFile(path.join(__dirname, 'client','dist','index.html')); //index.html root file
 });
 
 app.use(studentRouter);
