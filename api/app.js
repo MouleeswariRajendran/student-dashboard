@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 const cors = require("cors");
 require("dotenv").config();
-const path = require('path');
+import path from 'path';
 const PORT = process.env.PORT;
 const DB_URL = process.env.DB_URL;
 
@@ -28,7 +28,7 @@ mongoose
   .then(() => console.log("connected to MongoDB"))
   .catch((err) => console.log("could not connect to MongoDB", err));
 
-const __dirname = path.resolve();
+  let __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '/client/dist'))); //dist vite oda server
 
 app.get("*", (req, res) => {
