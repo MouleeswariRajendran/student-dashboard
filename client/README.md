@@ -1,5 +1,5 @@
 
-https://zen-student-dashboard-sowbi.netlify.app/
+https://-student-dashboard-sowbi.netlify.app/
 
 
 # React + Vite
